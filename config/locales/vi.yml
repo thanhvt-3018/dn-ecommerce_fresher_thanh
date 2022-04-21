@@ -1,0 +1,25 @@
+vi:
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        phone: "Điện thoại"
+        address: "Địa chỉ"
+      category:
+        name: "Tên danh mục"
+      product:
+        name: "Tên sản phẩm"
+        product_sku: "Mã sản phẩm"
+        title: "Tiêu đề sản phẩm"
+        description: "Mô tả sản phẩm"
+        price: "Giá"
+        image: "Hình ảnh"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "phải tối thiểu %{count} ký tự!"
+              too_long: "phải tối đa %{count} ký tự!"
