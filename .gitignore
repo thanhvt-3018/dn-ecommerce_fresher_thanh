@@ -65,3 +65,11 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+.browserslistrc
+.framgia-ci-reports/
+.framgia-ci-result.temp.yml
+
+config/credentials.yml.enc
+config/database.yml
+test
