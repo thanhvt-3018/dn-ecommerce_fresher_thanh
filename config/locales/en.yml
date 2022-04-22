@@ -1,2 +1,26 @@
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        password: "Password"
+        password_confirmation: "Password confirm"
+        phone: "Phone"
+        address: "Address"
+      category:
+        name: "Name"
+      product:
+        name: "Product name"
+        product_sku: "Product SKU"
+        title: "Product title"
+        description: "Product desscription"
+        price: "Product price"
+        image: "Image"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "minimum is %{count} characters!"
+              too_long: "maximum is %{count} characters!"
+
