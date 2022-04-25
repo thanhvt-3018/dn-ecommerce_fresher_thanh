@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><%= t "page.order.order_id" %></th>
+      <th scope="col"><%= t "page.order.date" %></th>
+      <th scope="col"><%= t "page.order.subtotal" %></th>
+      <th scope="col"><%= t "page.order.status" %></th>
+      <th scope="col"><%= t "page.order.operation" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "order_row", collection: @orders, as: :order %>
+  </tbody>
+</table>

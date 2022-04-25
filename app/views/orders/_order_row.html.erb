@@ -1,0 +1,13 @@
+<tr>
+  <th scope="row">#<%= order.id %></th>
+  <td><%= order.created_at.strftime("%F | %T") %></td>
+  <td><%= number_to_currency order.subtotal %></td>
+  <td>
+    <span class='<%= "badge badge-#{order.status} rounded-pill d-inline" %>'><%= t "order_status.#{order.status}" %></span>
+  </td>
+  <td>
+    <div class="d-flex gap-2 d-md-block" style="justify-content: center;">
+      <%= button_to t("global.button.delete"), order_path(order.id), class: "btn btn-primary", method: :delete, data: {confirm: t("global.confirm.delete")}, remote: true %>
+    </div>
+  </td>
+</tr>

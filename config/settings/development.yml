@@ -1,3 +1,5 @@
 length_8: 8
 length_20: 20
 pagy_item_8: 8
+pagy_item_10: 10
+format_time: "%F | %T"

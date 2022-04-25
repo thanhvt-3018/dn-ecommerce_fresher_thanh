@@ -36,6 +36,12 @@ vi:
         strip_insignificant_zeros: false
         unit: "đồng"
 
+  order_status:
+    pending: "Chờ xác nhận"
+    confirmed: "Đã xác nhận"
+    delivering: "Đang giao"
+    received: "Đã nhận"
+
   global:
     base_title: "Website thương mại điện tử"
     footer_text: "Project 1: Võ Trọng Thanh | Sun VN"
@@ -47,12 +53,20 @@ vi:
       log_in: "Xin hãy đăng nhập"
       delivery_info: "Vui lòng nhập thông tin nhận hàng"
       order: "Đặt hàng thất bại"
+      update_status_order: "Cập nhật trạng thái đơn hàng thất bại"
+      destroy_danger: "Hủy đơn hàng thất bại"
+      pending_deleted: "Chỉ được xóa đơn hàng chờ xác nhận"
+      not_order: "Không tồn tại đơn hàng"
     success:
       log_in: "Đăng nhập thành công"
       add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
       remove_product_from_cart: "Xóa sản phẩm khỏi giỏ hàng thành công"
       update_cart: "Cập nhật số lượng thành công"
       order: "Đặt hàng thành công"
+      category_not_found: "Không tìm thấy danh mục"
+      update_status_order: "Cập nhật trạng thái đơn hàng thành công"
+      log_in: "Đăng nhập thành công"
+      destroy_success: "Hủy đơn hàng thành công"
     button:
       view: "Xem"
       edit: "Sửa"
@@ -96,6 +110,7 @@ vi:
       title: "Trang quản trị"
       sub_title: "Hệ thống quản lý website thương mại điện tử."
       list_products_title: "Danh sách sản phẩm"
+      order_detail: "Chi tiết đơn hàng "
     home:
       list_products: "Danh sách sản phẩm"
       view_detail: "Xem chi tiết"
@@ -115,3 +130,16 @@ vi:
       products: "Sản phẩm"
       total: "Tổng tiền"
       place_order: "Đặt hàng"
+      order_id: "Mã đơn hàng"
+      date: "Ngày đặt hàng"
+      subtotal: "Tổng tiền"
+      status: "Trạng thái đơn hàng"
+      by_user: "Khách hàng"
+      phone: "Điện thoại"
+      address: "Địa chỉ"
+      operation: "Thao tác"
+  admin:
+    orders:
+      not_found: "Không tìm thấy đơn hàng"
+      order:
+        deleted: "Đã hủy"
