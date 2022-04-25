@@ -45,10 +45,30 @@ en:
     contact: "Contact"
     login: "Login"
     register: "Register"
+    user:
+      settings: "<i class='fa-solid fa-gear'></i> Settings"
+      logout: "<i class='fa-solid fa-right-from-bracket'></i> Logout"
+    admin:
+      dashboard: "<i class='fa-solid fa-house menu-icon'></i><span class='menu-title'>Dashboard</span>"
+      product_manage: "Products management"
+      product:
+        list: "List products"
+        create: "Create new product"
+      category_manage: "Categories management"
+      category:
+        list: "List categories"
+        create: "Create new category"
+      user_manage: "Users management"
+      user:
+        list: "List users"
+        create: "Create new user"
+      order_manage: "<i class='fa-solid fa-money-bill-1 menu-icon'></i><span class='menu-title'>Orders management</span>"
 
   page:
+    admin:
+      title: "Admin Dashboard"
+      sub_title: "E-commerce website management system."
     home:
       list_products: "List Products"
-      product_name_demo: "Power bank"
       view_detail: "View Detail"
       add_card: "Add To Card"
