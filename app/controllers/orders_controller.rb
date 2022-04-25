@@ -1,12 +1,10 @@
 class OrdersController < ApplicationController
-  before_action :load_products_into_cart
-  before_action :build_order, only: %i(new create)
+  before_action :require_login, :load_products_into_cart
+  before_action :build_order, only: :create
   before_action :total_price_into_cart,
                 :build_order_detail, only: :create
   before_action :load_orders, only: :index
   before_action :find_order, :update_quantity, only: :destroy
-
-  def new; end
 
   def index; end
 
@@ -20,7 +18,7 @@ class OrdersController < ApplicationController
     redirect_to root_path
   rescue ActiveRecord::RecordNotSaved
     flash[:danger] = t "global.danger.order"
-    render :new
+    redirect_to root_path
   end
 
   def destroy
@@ -49,9 +47,5 @@ class OrdersController < ApplicationController
 
   def load_orders
     @orders = current_user.orders.newest
-    return if @orders
-
-    flash[:danger] = t ".not_found"
-    redirect_to root_path
   end
 end
