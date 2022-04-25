@@ -24,3 +24,5 @@ en:
               too_short: "minimum is %{count} characters!"
               too_long: "maximum is %{count} characters!"
 
+  global:
+    base_title: "E-commerce website"

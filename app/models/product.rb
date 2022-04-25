@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   belongs_to :category
   has_many :order_details, dependent: :destroy
+  has_one_attached :image
 
   validates :name, presence: true
   validates :product_sku, presence: true, uniqueness: true

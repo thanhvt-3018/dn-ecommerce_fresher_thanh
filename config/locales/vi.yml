@@ -23,3 +23,33 @@ vi:
             password:
               too_short: "phải tối thiểu %{count} ký tự!"
               too_long: "phải tối đa %{count} ký tự!"
+
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%n %u"
+        precision: 0
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "đồng"
+
+  global:
+    base_title: "Website thương mại điện tử"
+    footer_text: "Project 1: Võ Trọng Thanh | Sun VN"
+
+  menu:
+    categories: "Danh mục"
+    home: "Trang chủ"
+    shop: "Cửa hàng"
+    contact: "Liên hệ"
+    login: "Đăng nhập"
+    register: "Đăng ký"
+
+  page:
+    home:
+      list_products: "Danh sách sản phẩm"
+      product_name_demo: "Sạc dự phòng"
+      view_detail: "Xem chi tiết"
+      add_card: "Thêm vào giỏ hàng"
