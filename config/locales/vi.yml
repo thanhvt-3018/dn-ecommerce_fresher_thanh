@@ -47,10 +47,30 @@ vi:
     contact: "Liên hệ"
     login: "Đăng nhập"
     register: "Đăng ký"
+    user:
+      settings: "<i class='fa-solid fa-gear'></i> Cài đặt tài khoản"
+      logout: "<i class='fa-solid fa-right-from-bracket'></i> Đăng xuất"
+    admin:
+      dashboard: "<i class='fa-solid fa-house menu-icon'></i><span class='menu-title'>Bảng điều khiển</span>"
+      product_manage: "Quản lý sản phẩm"
+      product:
+        list: "Danh sách sản phẩm"
+        create: "Tạo mới sản phẩm"
+      category_manage: "Quản lý danh mục"
+      category:
+        list: "Danh sách danh mục"
+        create: "Tạo mới danh mục"
+      user_manage: "Quản lý người dùng"
+      user:
+        list: "Danh sách người dùng"
+        create: "Tạo mới người dùng"
+      order_manage: "<i class='fa-solid fa-money-bill-1 menu-icon'></i><span class='menu-title'>Quản lý đơn hàng</span>"
 
   page:
+    admin:
+      title: "Trang quản trị"
+      sub_title: "Hệ thống quản lý website thương mại điện tử."
     home:
       list_products: "Danh sách sản phẩm"
-      product_name_demo: "Sạc dự phòng"
       view_detail: "Xem chi tiết"
       add_card: "Thêm vào giỏ hàng"

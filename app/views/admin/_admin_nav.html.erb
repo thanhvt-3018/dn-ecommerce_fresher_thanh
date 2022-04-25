@@ -1,0 +1,60 @@
+<nav class="sidebar">
+  <ul class="nav">
+    <li class="nav-item">
+      <%= link_to raw(t "menu.admin.dashboard"), admin_index_path, class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#products" aria-expanded="false">
+        <i class="fa-solid fa-headphones menu-icon"></i>
+        <span class="menu-title"><%= t "menu.admin.product_manage" %></span>
+        <i class="fa fa-angle-down menu-arrow"></i>
+      </a>
+      <div class="collapse" id="products">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t("menu.admin.product.list"), "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t("menu.admin.product.create"), "#", class: "nav-link" %>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#categories" aria-expanded="false" aria-controls="ui-basic">
+        <i class="fa-solid fa-sitemap menu-icon"></i>
+        <span class="menu-title"><%= t "menu.admin.category_manage" %></span>
+        <i class="fa fa-angle-down menu-arrow"></i>
+      </a>
+      <div class="collapse" id="categories">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t("menu.admin.category.list"), "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t("menu.admin.category.create"), "#", class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="ui-basic">
+        <i class="fa-solid fa-users menu-icon"></i>
+        <span class="menu-title"><%= t "menu.admin.user_manage" %></span>
+        <i class="fa fa-angle-down menu-arrow"></i>
+      </a>
+      <div class="collapse" id="users">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t("menu.admin.user.list"), "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t("menu.admin.user.create"), "#", class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <%= link_to raw(t "menu.admin.order_manage"), "#", class: "nav-link" %>
+    </li>
+  </ul>
+</nav>
