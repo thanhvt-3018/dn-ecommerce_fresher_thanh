@@ -1,0 +1,27 @@
+<!-- Navbar Start -->
+<div class="container-fluid">
+  <div class="row border-top">
+    <div class="col-lg-3">
+      <a class="btn align-items-center bg-primary w-100 nav-category" href="#navbar-vertical" data-toggle="collapse">
+        <h4><%= t "menu.categories" %></h4>
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+    <div class="col-lg-9">
+      <nav class="navbar py-3">
+        <div class="wrap-menu">
+          <div class="navbar-main mr-auto navbar-nav">
+            <%= link_to t("menu.home"), root_path, class: "nav-item nav-link" %>
+            <%= link_to t("menu.shop"), "#", class: "nav-item nav-link" %>
+            <%= link_to t("menu.contact"), "#", class: "nav-item nav-link" %>
+          </div>
+          <div class="navbar-main navbar-nav py-0">
+            <%= link_to t("menu.login"), "#", class: "nav-item nav-link" %>
+            <%= link_to t("menu.register"), "#", class: "nav-item nav-link" %>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Navbar End -->

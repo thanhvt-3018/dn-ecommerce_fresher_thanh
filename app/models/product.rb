@@ -8,4 +8,6 @@ class Product < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :price, presence: true, numericality: true
+
+  scope :newest, ->{order created_at: :desc}
 end

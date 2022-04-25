@@ -38,6 +38,7 @@ vi:
   global:
     base_title: "Website thương mại điện tử"
     footer_text: "Project 1: Võ Trọng Thanh | Sun VN"
+    search: "Tìm kiếm"
 
   menu:
     categories: "Danh mục"

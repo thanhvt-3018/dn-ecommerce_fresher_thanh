@@ -1,0 +1,13 @@
+<!-- Products Start -->
+<div class="container-fluid">
+    <div class="text-center mb-4">
+        <h2 class="section-title">
+          <span><%= t "page.home.list_products" %></span>
+        </h2>
+    </div>
+    <div class="row">
+      <%= render @products %>
+    </div>
+    <%== pagy_nav(@pagy)%>
+</div>
+<!-- Products End -->
