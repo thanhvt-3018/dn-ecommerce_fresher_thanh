@@ -24,5 +24,31 @@ en:
               too_short: "minimum is %{count} characters!"
               too_long: "maximum is %{count} characters!"
 
+  number:
+    currency:
+      format:
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        unit: "$"
+
   global:
     base_title: "E-commerce website"
+    footer_text: "Project 1: Vo Trong Thanh | Sun VN"
+    search: "Search"
+
+  menu:
+    categories: "Categories"
+    home: "Home"
+    shop: "Shop"
+    contact: "Contact"
+    login: "Login"
+    register: "Register"
+
+  page:
+    home:
+      list_products: "List Products"
+      product_name_demo: "Power bank"
+      view_detail: "View Detail"
+      add_card: "Add To Card"
