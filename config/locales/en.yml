@@ -43,11 +43,14 @@ en:
       email_password_incorect: "Email and password incorect"
       not_admin: "Your account does not have admin access"
       log_in: "Please login"
+      delivery_info: "Please enter your delivery information"
+      order: "Order failed"
     success:
       log_in: "Login successfully"
       add_cart: "Product added to cart successfully"
       remove_product_from_cart: "Remove product from cart successfully"
       update_cart: "Update quantity successfully"
+      order: "Order Success"
     button:
       view: "View"
       edit: "Edit"
@@ -103,3 +106,10 @@ en:
       total: "Total"
       remove: "Remove"
       order: "Order"
+      cart_empty: "There are no items in your shopping cart. Please go back and add some items to your cart."
+    order:
+      info_title: "Order Information"
+      bill: "Information Line"
+      products: "Products"
+      total: "Total"
+      place_order: "Place Order"

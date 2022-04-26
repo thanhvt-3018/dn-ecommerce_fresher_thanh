@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
     resource :carts
 
+    resource :orders
+
     namespace :admin do
       get "index"
 
