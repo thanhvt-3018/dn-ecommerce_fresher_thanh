@@ -48,6 +48,8 @@ en:
     login:
       title: "Log in"
       button: "Log in"
+    success:
+      add_cart: "Product added to cart successfully"
     button:
       view: "View"
       edit: "Edit"

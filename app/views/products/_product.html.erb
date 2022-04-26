@@ -13,10 +13,12 @@
       <a href="" class="btn btn-sm"><i class="fas fa-eye text-primary"></i>
         <%= t "page.home.view_detail" %>
       </a>
-      <a href="" class="btn btn-sm"><i class="fas fa-shopping-cart text-primary"></i>
-        <%= t "page.home.add_card" %>
-      </a>
+      <%= form_for :session, url: carts_path, method: :post, remote: true do |f| %>
+        <div class="input-group-btn">
+          <%= f.hidden_field :product_id, value: product.id %>
+          <%= f.submit t("page.home.add_card"), class: "btn btn-sm" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
-
