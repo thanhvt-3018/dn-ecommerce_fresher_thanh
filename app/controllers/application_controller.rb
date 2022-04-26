@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include SessionsHelper
   include Pagy::Backend
   rescue_from Pagy::OverflowError, with: :redirect_to_last_page
 

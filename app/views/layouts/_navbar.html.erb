@@ -15,10 +15,23 @@
             <%= link_to t("menu.shop"), "#", class: "nav-item nav-link" %>
             <%= link_to t("menu.contact"), "#", class: "nav-item nav-link" %>
           </div>
-          <div class="navbar-main navbar-nav py-0">
-            <%= link_to t("menu.login"), "#", class: "nav-item nav-link" %>
-            <%= link_to t("menu.register"), "#", class: "nav-item nav-link" %>
-          </div>
+          <% if logged_in? %>
+            <div class="nav-item dropdown">
+              <%= link_to "#", class: "nav-link dropdown-toggle", "data-toggle": "dropdown" do %>
+                <%= current_user.name %>
+                <i class="fa fa-angle-down"></i>
+              <% end %>
+              <div class="dropdown-menu">
+                <%= link_to raw(t "menu.user.settings"), "#", class: "dropdown-item" %>
+                <%= link_to raw(t "menu.user.logout"), logout_path, method: :delete, class: "dropdown-item" %>
+              </div>
+            </div>
+          <% else %>
+            <div class="navbar-main navbar-nav py-0">
+              <%= link_to t("menu.login"), login_path, class: "nav-item nav-link" %>
+              <%= link_to t("menu.register"), "#", class: "nav-item nav-link" %>
+            </div>
+          <% end %>
         </div>
       </nav>
     </div>

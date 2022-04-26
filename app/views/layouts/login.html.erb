@@ -13,10 +13,6 @@
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
-    <%= render "admin_header" %>
-    <div class="container-fluid page-body-wrapper">
-      <%= render "admin_nav" %>
-      <%= yield %>
-    </div>
+    <%= yield %>
   </body>
 </html>
