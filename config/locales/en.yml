@@ -45,16 +45,16 @@ en:
       log_in: "Please login"
     success:
       log_in: "Login successfully"
-    login:
-      title: "Log in"
-      button: "Log in"
-    success:
       add_cart: "Product added to cart successfully"
+      remove_product_from_cart: "Remove product from cart successfully"
+      update_cart: "Update quantity successfully"
     button:
       view: "View"
       edit: "Edit"
       delete: "Delete"
       update: "Update"
+    confirm:
+      delete: "Sure want to delete?"
     login:
       title: "Log in"
       button: "Log in"

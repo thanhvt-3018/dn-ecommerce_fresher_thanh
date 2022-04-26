@@ -10,7 +10,19 @@ class CartsController < ApplicationController
     redirect_to request.referer || root_path
   end
 
-  def edit; end
+  def update
+    old_quantity = @cart[params[:session][:product_id]]
+    new_quantity = (params.dig(:session, :quantity) || 1).to_i
+    return if new_quantity == old_quantity
 
-  def destroy; end
+    @cart[params[:session][:product_id]] = new_quantity
+    flash[:success] = t "global.success.update_cart"
+    redirect_to request.referer || root_path
+  end
+
+  def destroy
+    @cart.delete params.dig(:session, :product_id)
+    flash[:success] = t "global.success.remove_product_from_cart"
+    redirect_to request.referer || root_path
+  end
 end
