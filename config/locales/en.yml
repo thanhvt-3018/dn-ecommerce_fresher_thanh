@@ -16,6 +16,7 @@ en:
         description: "Product desscription"
         price: "Product price"
         image: "Image"
+        stock: "Stock"
     errors:
       models:
         user:
@@ -41,11 +42,20 @@ en:
       email_not_found: "Email does not exist"
       email_password_incorect: "Email and password incorect"
       not_admin: "Your account does not have admin access"
+      log_in: "Please login"
     success:
       log_in: "Login successfully"
     login:
       title: "Log in"
       button: "Log in"
+    button:
+      view: "View"
+      edit: "Edit"
+      delete: "Delete"
+    login:
+      title: "Log in"
+      button: "Log in"
+    operation: "Operation"
 
   menu:
     categories: "Categories"
@@ -77,6 +87,7 @@ en:
     admin:
       title: "Admin Dashboard"
       sub_title: "E-commerce website management system."
+      list_products_title: "Products list"
     home:
       list_products: "List Products"
       view_detail: "View Detail"

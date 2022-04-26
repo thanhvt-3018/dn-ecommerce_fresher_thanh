@@ -16,6 +16,7 @@ vi:
         description: "Mô tả sản phẩm"
         price: "Giá"
         image: "Hình ảnh"
+        stock: "Tồn kho"
     errors:
       models:
         user:
@@ -43,11 +44,21 @@ vi:
       email_not_found: "Địa chỉ email không tồn tại"
       email_password_incorect: "Email and mật khẩu không chính xác"
       not_admin: "Tài khoản của bạn không có quyền truy cập trang admin"
+      log_in: "Xin hãy đăng nhập"
     success:
       log_in: "Đăng nhập thành công"
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"
+    button:
+      view: "Xem"
+      edit: "Xóa"
+      delete: "Sửa"
+    login:
+      title: "Đăng nhập"
+      button: "Đăng nhập"
+    operation: "Thao tác"
+
   menu:
     categories: "Danh mục"
     home: "Trang chủ"
@@ -78,6 +89,7 @@ vi:
     admin:
       title: "Trang quản trị"
       sub_title: "Hệ thống quản lý website thương mại điện tử."
+      list_products_title: "Danh sách sản phẩm"
     home:
       list_products: "Danh sách sản phẩm"
       view_detail: "Xem chi tiết"

@@ -1,0 +1,33 @@
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><%= t "page.admin.list_products_title"%></h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th><%= t "activerecord.attributes.product.product_sku"%></th>
+                    <th><%= t "activerecord.attributes.product.name"%></th>
+                    <th><%= t "activerecord.attributes.product.title"%></th>
+                    <th><%= t "activerecord.attributes.product.description"%></th>
+                    <th><%= t "activerecord.attributes.product.image"%></th>
+                    <th><%= t "activerecord.attributes.product.stock"%></th>
+                    <th><%= t "activerecord.attributes.product.price"%></th>
+                    <th><%= t "global.operation"%></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <%= render @products %>
+                </tbody>
+              </table>
+              <%== pagy_nav(@pagy)%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<tr>
+  <td><%= product.product_sku %></td>
+  <td><%= product.name %></td>
+  <td><%= product.title %></td>
+  <td><%= product.description %></td>
+  <td class="table-img">
+    <%= link_to image_tag(product.image) %>
+  </td>
+  <td><%= product.stock %></td>
+  <td><%= number_to_currency product.price %></td>
+  <td>
+    <%= link_to t("global.button.view"), "#", class: "btn btn-primary" %>
+    <%= link_to t("global.button.edit"), "#", class: "btn btn-success" %>
+    <%= link_to t("global.button.delete"), "#", class: "btn btn-warning" %>
+  </td>
+</tr>
