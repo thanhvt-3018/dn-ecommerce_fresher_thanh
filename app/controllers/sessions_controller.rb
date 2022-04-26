@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
 
       return redirect_to admin_index_path if @user.admin?
 
-      redirect_to root_path
+      redirect_back_or root_path
     else
       flash.now[:danger] = t "global.danger.email_password_incorect"
       render :new

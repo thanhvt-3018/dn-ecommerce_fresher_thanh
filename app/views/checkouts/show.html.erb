@@ -1,0 +1,43 @@
+<div class="container-fluid pt-5">
+  <div class="row px-xl-5">
+    <div class="col-lg-8">
+      <div class="mb-4">
+        <h4 class="font-weight-semi-bold mb-4"><%= t "page.order.info_title" %></h4>
+        <div class="row checkout">
+          <%= form_for :session do |f|%>
+            <div class="col-md-6 form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, value: current_user.name, class: "form-control" %>
+            </div>
+            <div class="col-md-6 form-group">
+              <%= f.label :phone %>
+              <%= f.text_field :phoneone, value: current_user.phone, class: "form-control" %>
+            </div>
+            <div class="col-md-12 form-group">
+              <%= f.label :address %>
+              <%= f.text_field :address, value: current_user.address, class: "form-control" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-secondary mb-5">
+        <div class="card-header bg-secondary border-0">
+          <h4 class="font-weight-semi-bold m-0"><%= t "page.order.bill" %></h4>
+        </div>
+        <div class="card-body">
+          <h5 class="font-weight-medium mb-3"><%= t "page.order.products" %></h5>
+          <%= render partial: "product_row", collection: @products, as: :product %>
+        </div>
+        <div class="card-footer border-secondary bg-transparent">
+          <div class="d-flex justify-content-between mt-2">
+            <h5 class="font-weight-bold"><%= t "page.order.total" %></h5>
+            <h5 class="font-weight-bold"><%= number_to_currency @sum %></h5>
+          </div>
+          <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3"><%= t "page.order.place_order" %></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

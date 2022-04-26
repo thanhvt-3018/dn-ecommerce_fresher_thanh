@@ -1,3 +1,6 @@
+<% if @cart.empty? %>
+<div><%= t "page.cart.cart_empty" %></div>
+<% else %>
 <div class="container-fluid pt-5">
   <div class="row px-xl-5">
     <div class="col-lg-8 table-responsive mb-5">
@@ -15,20 +18,21 @@
           <%= render partial: "cart_row", collection: @products, as: :product %>
         </tbody>
       </table>
-  </div>
-  <div class="col-lg-4">
-    <div class="card border-secondary mb-5">
-      <div class="card-header bg-secondary border-0">
-        <h4 class="font-weight-semi-bold m-0"><%= t "page.cart.summary" %></h4>
-      </div>
-      <div class="card-footer border-secondary bg-transparent">
-        <div class="d-flex justify-content-between mt-2">
-          <h5 class="font-weight-bold"><%= t "page.cart.total" %></h5>
-          <h5 class="font-weight-bold"><%= number_to_currency @sum %></h5>
-        </div>
-        <button class="btn btn-block btn-primary my-3 py-3"><%= t "page.cart.order" %></button>
-      </div>
     </div>
+    <div class="col-lg-4">
+      <div class="card border-secondary mb-5">
+        <div class="card-header bg-secondary border-0">
+          <h4 class="font-weight-semi-bold m-0"><%= t "page.cart.summary" %></h4>
+        </div>
+        <div class="card-footer border-secondary bg-transparent">
+          <div class="d-flex justify-content-between mt-2">
+            <h5 class="font-weight-bold"><%= t "page.cart.total" %></h5>
+            <h5 class="font-weight-bold"><%= number_to_currency @sum %></h5>
+          </div>
+          <%= link_to t("page.cart.order"), checkout_path, class: "btn btn-block btn-primary my-3 py-3" %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<% end %>

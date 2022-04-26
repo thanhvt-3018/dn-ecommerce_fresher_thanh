@@ -57,6 +57,13 @@ vi:
       update: "Cập nhật"
     confirm:
       delete: "Chắc chắn muốn xóa?"
+    button:
+      view: "Xem"
+      edit: "Sửa"
+      delete: "Xóa"
+      update: "Cập nhật"
+    confirm:
+      delete: "Chắc chắn muốn xóa?"
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"
@@ -105,3 +112,10 @@ vi:
       total: "Tổng tiền"
       remove: "Xóa"
       order: "Đặt hàng"
+      cart_empty: "Không có sản phẩm nào trong giỏ hàng của bạn. Vui lòng quay lại và thêm một số mặt hàng vào giỏ hàng của bạn."
+    order:
+      info_title: "Thông tin đặt hàng"
+      bill: "Thông tin đơn hàng"
+      products: "Sản phẩm"
+      total: "Tổng tiền"
+      place_order: "Đặt hàng"

@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-between">
+  <p><%= product.name %></p>
+  <p><%= @cart[(product.id).to_s] %></p>
+  <p><%= number_to_currency(product.price * @cart[product.id.to_s]) %></p>
+</div>
