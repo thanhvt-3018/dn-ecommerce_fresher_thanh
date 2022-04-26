@@ -61,8 +61,9 @@ vi:
       add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
     button:
       view: "Xem"
-      edit: "Xóa"
-      delete: "Sửa"
+      edit: "Sửa"
+      delete: "Xóa"
+      update: "Cập nhật"
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"
@@ -103,3 +104,11 @@ vi:
       list_products: "Danh sách sản phẩm"
       view_detail: "Xem chi tiết"
       add_card: "Thêm vào giỏ hàng"
+    cart:
+      summary: "Tóm tắt giỏ hàng"
+      product: "Sản phẩm"
+      price: "Giá"
+      quantity: "Số lượng"
+      total: "Tổng tiền"
+      remove: "Xóa"
+      order: "Đặt hàng"
