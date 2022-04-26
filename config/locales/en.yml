@@ -37,7 +37,15 @@ en:
     base_title: "E-commerce website"
     footer_text: "Project 1: Vo Trong Thanh | Sun VN"
     search: "Search"
-
+    danger:
+      email_not_found: "Email does not exist"
+      email_password_incorect: "Email and password incorect"
+      not_admin: "Your account does not have admin access"
+    success:
+      log_in: "Login successfully"
+    login:
+      title: "Log in"
+      button: "Log in"
   menu:
     categories: "Categories"
     home: "Home"
