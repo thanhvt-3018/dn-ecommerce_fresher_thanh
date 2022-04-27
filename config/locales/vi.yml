@@ -39,7 +39,15 @@ vi:
     base_title: "Website thương mại điện tử"
     footer_text: "Project 1: Võ Trọng Thanh | Sun VN"
     search: "Tìm kiếm"
-
+    danger:
+      email_not_found: "Địa chỉ email không tồn tại"
+      email_password_incorect: "Email and mật khẩu không chính xác"
+      not_admin: "Tài khoản của bạn không có quyền truy cập trang admin"
+    success:
+      log_in: "Đăng nhập thành công"
+    login:
+      title: "Đăng nhập"
+      button: "Đăng nhập"
   menu:
     categories: "Danh mục"
     home: "Trang chủ"

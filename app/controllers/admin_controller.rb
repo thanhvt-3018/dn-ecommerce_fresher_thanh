@@ -1,3 +1,5 @@
 class AdminController < ApplicationController
-  def index; end
+  def index
+    redirect_to admin_login_path unless logged_in?
+  end
 end
