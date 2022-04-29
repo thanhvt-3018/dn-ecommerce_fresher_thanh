@@ -5,6 +5,7 @@
   title = Faker::Lorem.sentence(word_count: 5)
   description = Faker::Lorem.sentence(word_count: 50)
   price = Faker::Number.decimal
-  product = Product.create!(name: name, product_sku: product_sku, category_id: category_id, title: title, description: description, price: price)
+  stock = rand(1000)
+  product = Product.create!(name: name, product_sku: product_sku, category_id: category_id, title: title, description: description, price: price, stock: stock)
   product.image.attach(io: File.open(Rails.root.join("public/images/#{n+1}.jpeg")), filename: "#{n+1}.jpeg")
 end

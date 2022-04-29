@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     namespace :admin do
       get "index"
+      resources :products, only: %i(index update create destroy)
     end
   end
 end
