@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
+  include CartsHelper
   include Pagy::Backend
   rescue_from Pagy::OverflowError, with: :redirect_to_last_page
 
-  before_action :set_locale
+  before_action :set_locale, :init_cart, :load_cart
 
   private
   def set_locale

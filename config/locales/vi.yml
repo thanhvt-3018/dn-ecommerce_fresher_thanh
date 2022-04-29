@@ -57,6 +57,15 @@ vi:
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"
+    success:
+      add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
+    button:
+      view: "Xem"
+      edit: "Xóa"
+      delete: "Sửa"
+    login:
+      title: "Đăng nhập"
+      button: "Đăng nhập"
     operation: "Thao tác"
 
   menu:

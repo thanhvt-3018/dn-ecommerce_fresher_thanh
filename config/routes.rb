@@ -5,8 +5,11 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
 
+    resource :carts
+
     namespace :admin do
       get "index"
+
       resources :products, only: %i(index update create destroy)
     end
   end

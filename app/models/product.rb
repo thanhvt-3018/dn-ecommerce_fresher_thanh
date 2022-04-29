@@ -10,4 +10,5 @@ class Product < ApplicationRecord
   validates :price, presence: true, numericality: true
 
   scope :newest, ->{order created_at: :desc}
+  scope :by_ids, ->(ids){where id: ids}
 end
