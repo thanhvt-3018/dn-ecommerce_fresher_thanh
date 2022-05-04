@@ -47,23 +47,16 @@ vi:
       log_in: "Xin hãy đăng nhập"
     success:
       log_in: "Đăng nhập thành công"
-    login:
-      title: "Đăng nhập"
-      button: "Đăng nhập"
-    button:
-      view: "Xem"
-      edit: "Xóa"
-      delete: "Sửa"
-    login:
-      title: "Đăng nhập"
-      button: "Đăng nhập"
-    success:
       add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
+      remove_product_from_cart: "Xóa sản phẩm khỏi giỏ hàng thành công"
+      update_cart: "Cập nhật số lượng thành công"
     button:
       view: "Xem"
       edit: "Sửa"
       delete: "Xóa"
       update: "Cập nhật"
+    confirm:
+      delete: "Chắc chắn muốn xóa?"
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"

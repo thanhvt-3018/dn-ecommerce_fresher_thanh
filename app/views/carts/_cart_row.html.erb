@@ -6,15 +6,23 @@
   <td class="align-middle">
     <div class="input-group quantity mx-auto" style="width: 100px;">
       <%= form_for :session, url: carts_path, method: :patch, remote: true do |f| %>
-        <%= f.number_field :quantity, class: "form-control form-control-sm bg-secondary text-center", value: @cart[(product.id).to_s], min: 1 %>
-        <div class="input-group-btn">
-          <%= f.hidden_field :product_id, value: product.id %>
-          <%= f.submit t("global.button.update"), class: "btn btn-sm btn-primary" %>
-        </div>
+      <div class="input-group">
+        <%= f.hidden_field :product_id, value: product.id %>
+        <%= f.number_field :quantity, value: @cart[(product.id).to_s], class: "form-control form-control-sm bg-secondary text-center", min: 1 %>
+      </div>
+      <div class="input-group-btn">
+        <%= f.submit t("global.button.update"), class: "btn btn-sm btn-primary btn-plus" %>
+      </div>
       <% end %>
     </div>
   </td>
   <td class="align-middle"><%= number_to_currency(product.price * @cart[product.id.to_s]) %></td>
-  <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+  <td class="align-middle">
+    <%= form_for :session, url: carts_path, method: :delete, remote: true do |f| %>
+      <div class="input-group-btn">
+        <%= f.hidden_field :product_id, value: product.id %>
+        <%= f.submit t("global.button.delete") , class: "btn btn-sm btn-primary", data: {confirm: t("global.confirm.delete")} %>
+      </div>
+    <% end %>
+  </td>
 </tr>
-
