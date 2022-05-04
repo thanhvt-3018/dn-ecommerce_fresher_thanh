@@ -11,4 +11,10 @@ module CartsHelper
   def load_products_into_cart
     @products = Product.by_ids @cart.keys
   end
+
+  def total_price_into_cart
+    @sum = @products.reduce(0) do |sum, item|
+      sum + item[:price] * @cart[item[:id].to_s]
+    end
+  end
 end

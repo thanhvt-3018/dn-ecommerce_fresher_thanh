@@ -54,6 +54,7 @@ en:
       view: "View"
       edit: "Edit"
       delete: "Delete"
+      update: "Update"
     login:
       title: "Log in"
       button: "Log in"
@@ -94,3 +95,11 @@ en:
       list_products: "List Products"
       view_detail: "View Detail"
       add_card: "Add To Card"
+    cart:
+      summary: "Cart Summary"
+      product: "Products"
+      price: "Price"
+      quantity: "Quantity"
+      total: "Total"
+      remove: "Remove"
+      order: "Order"

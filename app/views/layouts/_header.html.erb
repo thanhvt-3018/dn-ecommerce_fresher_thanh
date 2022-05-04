@@ -18,14 +18,14 @@
         <i class="fas fa-heart text-primary"></i>
         <span class="badge">0</span>
       </a>
-      <a href="" class="btn border">
+      <%= link_to carts_path, class: "btn border" do %>
         <i class="fas fa-shopping-cart text-primary"></i>
         <% if @quantity == 0 %>
           <span class="badge">0</span>
         <% else %>
           <span class="badge" style="background-color: #dc3545;"><%= @quantity %></span>
         <% end %>
-      </a>
+      <% end %>
     </div>
   </div>
 </div>
