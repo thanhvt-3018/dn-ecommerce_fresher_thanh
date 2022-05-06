@@ -45,11 +45,14 @@ vi:
       email_password_incorect: "Email and mật khẩu không chính xác"
       not_admin: "Tài khoản của bạn không có quyền truy cập trang admin"
       log_in: "Xin hãy đăng nhập"
+      delivery_info: "Vui lòng nhập thông tin nhận hàng"
+      order: "Đặt hàng thất bại"
     success:
       log_in: "Đăng nhập thành công"
       add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
       remove_product_from_cart: "Xóa sản phẩm khỏi giỏ hàng thành công"
       update_cart: "Cập nhật số lượng thành công"
+      order: "Đặt hàng thành công"
     button:
       view: "Xem"
       edit: "Sửa"
@@ -105,3 +108,10 @@ vi:
       total: "Tổng tiền"
       remove: "Xóa"
       order: "Đặt hàng"
+      cart_empty: "Không có sản phẩm nào trong giỏ hàng của bạn. Vui lòng quay lại và thêm một số mặt hàng vào giỏ hàng của bạn."
+    order:
+      info_title: "Thông tin đặt hàng"
+      bill: "Thông tin đơn hàng"
+      products: "Sản phẩm"
+      total: "Tổng tiền"
+      place_order: "Đặt hàng"
