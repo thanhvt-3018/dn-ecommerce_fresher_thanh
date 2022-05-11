@@ -79,6 +79,13 @@
   .nav-link {
     border-bottom: none !important;
   }
+  .dropdown-menu {
+    left: -50px;
+  }
+  .dropdown-item {
+    display: block;
+    padding: 0.25rem 1.5rem;
+  }
 }
 .navbar-main {
   display: flex;
@@ -132,4 +139,26 @@
 }
 .product-item:hover .product-img img {
   transform: scale(1.2);
+}
+.table {
+  text-align: center;
+}
+.badge {
+  font-size: 14px !important;
+}
+.badge-pending {
+  background-color: #cfe0fc !important;
+  color: #0a47a9 !important;
+}
+.badge-confirmed {
+  background-color: #c7f5d9 !important;
+  color: #0b4121 !important;
+}
+.badge-delivering {
+  background-color: #ffebc2 !important;
+  color: #453008 !important;
+}
+.badge-received {
+  background-color: #f0d8ff !important;
+  color: #453008 !important;
 }

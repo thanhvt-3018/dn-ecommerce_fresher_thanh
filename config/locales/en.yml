@@ -34,6 +34,12 @@ en:
         delimiter: ","
         unit: "$"
 
+  order_status:
+    pending: "Pending"
+    confirmed: "Confirmed"
+    delivering: "Delivering"
+    received: "Received"
+
   global:
     base_title: "E-commerce website"
     footer_text: "Project 1: Vo Trong Thanh | Sun VN"
@@ -45,12 +51,20 @@ en:
       log_in: "Please login"
       delivery_info: "Please enter your delivery information"
       order: "Order failed"
+      update_status_order: "Update order status failed"
+      destroy_danger: "Destroy order failed"
+      pending_deleted: "Only orders pending for confirmation can be deleted"
+      not_order: "Order does not exist"
     success:
       log_in: "Login successfully"
       add_cart: "Product added to cart successfully"
       remove_product_from_cart: "Remove product from cart successfully"
       update_cart: "Update quantity successfully"
       order: "Order Success"
+      category_not_found: "Category not found"
+      update_status_order: "Update order status successfully"
+      log_in: "Log in successfully"
+      destroy_success: "Deleted order successfully"
     button:
       view: "View"
       edit: "Edit"
@@ -94,6 +108,7 @@ en:
       title: "Admin Dashboard"
       sub_title: "E-commerce website management system."
       list_products_title: "Products list"
+      order_detail: "Order details "
     home:
       list_products: "List Products"
       view_detail: "View Detail"
@@ -113,3 +128,16 @@ en:
       products: "Products"
       total: "Total"
       place_order: "Place Order"
+      order_id: "Order ID"
+      date: "Order date"
+      subtotal: "Subtotal"
+      status: "Status"
+      by_user: "Customer"
+      phone: "Phone"
+      address: "Address"
+      operation: "Operation"
+  admin:
+    orders:
+      not_found: "Order not found"
+      order:
+        deleted: "Deleted"

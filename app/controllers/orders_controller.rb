@@ -3,8 +3,12 @@ class OrdersController < ApplicationController
   before_action :build_order, only: %i(new create)
   before_action :total_price_into_cart,
                 :build_order_detail, only: :create
+  before_action :load_orders, only: :index
+  before_action :find_order, :update_quantity, only: :destroy
 
   def new; end
+
+  def index; end
 
   def create
     @order.subtotal = @sum
@@ -17,6 +21,10 @@ class OrdersController < ApplicationController
   rescue ActiveRecord::RecordNotSaved
     flash[:danger] = t "global.danger.order"
     render :new
+  end
+
+  def destroy
+    redirect_to orders_path
   end
 
   private
@@ -37,5 +45,13 @@ class OrdersController < ApplicationController
       @order.order_details.build(product_id: product_id, quantity: quantity,
         price: price)
     end
+  end
+
+  def load_orders
+    @orders = current_user.orders.newest
+    return if @orders
+
+    flash[:danger] = t ".not_found"
+    redirect_to root_path
   end
 end
