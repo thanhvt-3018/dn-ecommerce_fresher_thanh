@@ -53,6 +53,7 @@ vi:
       log_in: "Xin hãy đăng nhập"
       delivery_info: "Vui lòng nhập thông tin nhận hàng"
       order: "Đặt hàng thất bại"
+      destroy_danger: "Hủy đơn hàng thất bại"
       update_status_order: "Cập nhật trạng thái đơn hàng thất bại"
       destroy_danger: "Hủy đơn hàng thất bại"
       pending_deleted: "Chỉ được xóa đơn hàng chờ xác nhận"

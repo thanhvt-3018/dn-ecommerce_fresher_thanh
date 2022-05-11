@@ -3,7 +3,7 @@ module OrdersHelper
     @order = Order.find_by id: params[:id]
     return if @order
 
-    flash[:danger] = t ".not_found"
+    flash[:danger] = t "admin.orders.not_found"
     redirect_to root_path
   end
 
