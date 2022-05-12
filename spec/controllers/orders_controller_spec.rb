@@ -1,6 +1,5 @@
 require "rails_helper"
 include SessionsHelper
-include CartsHelper
 
 RSpec.describe OrdersController, type: :controller do
   let!(:user) {FactoryBot.create :user}
