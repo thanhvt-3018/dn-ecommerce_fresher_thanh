@@ -58,6 +58,7 @@ vi:
       destroy_danger: "Hủy đơn hàng thất bại"
       pending_deleted: "Chỉ được xóa đơn hàng chờ xác nhận"
       not_order: "Không tồn tại đơn hàng"
+      update_cart: "Số lượng không được là giá trị âm"
     success:
       log_in: "Đăng nhập thành công"
       add_cart: "Thêm sản phẩm vào giỏ hàng thành công"
