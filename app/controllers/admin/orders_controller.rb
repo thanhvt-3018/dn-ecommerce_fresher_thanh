@@ -14,14 +14,16 @@ class Admin::OrdersController < AdminController
   end
 
   def update
-    return if params[:order].nil?
-
-    flash[:danger] = t "global.danger.not_order"
-    if @order.update status: params[:order][:status]
-      flash[:success] = t "global.success.update_status_order"
+    if params[:order].empty?
+      flash[:danger] = t "global.danger.not_order"
     else
-      flash[:danger] = t "global.danger.update_status_order"
+      begin
+        @order.update! status: params[:order][:status]
+      rescue ActiveRecord::RecordNotSaved
+        flash[:danger] = t "global.danger.update_status_order"
+      end
+      flash[:success] = t "global.success.update_status_order"
+      redirect_to admin_orders_path
     end
-    redirect_to admin_orders_path
   end
 end

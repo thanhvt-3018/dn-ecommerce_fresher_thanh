@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
   layout "admin"
-  before_action :require_login, :check_admin, only: :index
+  before_action :require_login, :check_admin
 
   def index; end
 

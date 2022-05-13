@@ -55,6 +55,7 @@ en:
       destroy_danger: "Destroy order failed"
       pending_deleted: "Only orders pending for confirmation can be deleted"
       not_order: "Order does not exist"
+      update_cart: "Quantity not is negative value"
     success:
       log_in: "Login successfully"
       add_cart: "Product added to cart successfully"
