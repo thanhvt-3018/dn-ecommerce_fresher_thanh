@@ -7,8 +7,7 @@
     <% if order.deleted? %>
       <span class="badge rounded-pill d-inline" %><%= t ".deleted" %></span>
     <% else %>
-      <% contain_status order %>
-      <%= f.select(:status, options_for_select(@arr_status, order.status)) %>
+      <%= f.select(:status, options_for_select(contain_status(order), order.status)) %>
     <% end %>
   </td>
   <td><%= order.name %></td>
