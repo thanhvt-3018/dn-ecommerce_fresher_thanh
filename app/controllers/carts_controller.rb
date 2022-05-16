@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  before_action :store_location
   before_action :load_products_into_cart, :total_price_into_cart, only: :show
   before_action :handle_quantity, only: :update
 

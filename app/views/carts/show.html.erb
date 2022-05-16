@@ -29,14 +29,13 @@
             <h5 class="font-weight-bold"><%= t "page.cart.total" %></h5>
             <h5 class="font-weight-bold"><%= number_to_currency @sum %></h5>
           </div>
-          <% unless logged_in? %>
-            <% store_location %>
-            <%= link_to t("page.order.place_order"), login_path, class: "btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" %>
+          <% unless user_signed_in? %>
+            <%= link_to t("page.order.place_order"), new_user_session_path, class: "btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" %>
           <% end %>
         </div>
       </div>
     </div>
-    <% if logged_in? %>
+    <% if user_signed_in? %>
       <%= form_for :order, url: orders_path, method: :post, remote: true do |f|%>
         <div class="col-lg-8">
           <div>

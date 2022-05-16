@@ -1,4 +1,4 @@
-<% if logged_in? %>
+<% if user_signed_in? %>
 <nav class="navbar navbar-admin col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="navbar-brand-wrapper d-flex justify-content-center">
     <p class="text-logo">Admin</p>
@@ -24,7 +24,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
           <%= link_to raw(t "menu.user.settings" ), "#", class: "dropdown-item" %>
-          <%= link_to raw(t "menu.user.logout" ), logout_path, method: :delete, class: "dropdown-item" %>
+          <%= link_to raw(t "menu.user.logout" ), destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
     </ul>

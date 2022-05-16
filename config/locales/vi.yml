@@ -79,6 +79,7 @@ vi:
     login:
       title: "Đăng nhập"
       button: "Đăng nhập"
+    register: "Đăng ký"
     operation: "Thao tác"
 
   menu:
@@ -90,6 +91,7 @@ vi:
     register: "Đăng ký"
     user:
       settings: "<i class='fa-solid fa-gear'></i> Cài đặt tài khoản"
+      orders: "<i class='fa-brands fa-opencart'></i> Đơn hàng của bạn"
       logout: "<i class='fa-solid fa-right-from-bracket'></i> Đăng xuất"
     admin:
       dashboard: "<i class='fa-solid fa-house menu-icon'></i><span class='menu-title'>Bảng điều khiển</span>"
