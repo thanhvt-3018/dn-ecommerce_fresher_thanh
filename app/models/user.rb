@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
   has_many :orders, dependent: :destroy
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
@@ -10,5 +12,4 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :password, presence: true
   validates :password, length: {in: Settings.length_8..Settings.length_20}
-  has_secure_password
 end
