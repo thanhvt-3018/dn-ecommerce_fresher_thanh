@@ -21,5 +21,7 @@ Devise.setup do |config|
 
   config.reset_password_within = 6.hours
 
+  config.sign_out_all_scopes = false
+
   config.sign_out_via = :delete
 end

@@ -76,6 +76,7 @@ en:
     login:
       title: "Log in"
       button: "Log in"
+    register: "Register"
     operation: "Operation"
 
   menu:
@@ -87,6 +88,7 @@ en:
     register: "Register"
     user:
       settings: "<i class='fa-solid fa-gear'></i> Settings"
+      orders: "<i class='fa-brands fa-opencart'></i> Your orders"
       logout: "<i class='fa-solid fa-right-from-bracket'></i> Logout"
     admin:
       dashboard: "<i class='fa-solid fa-house menu-icon'></i><span class='menu-title'>Dashboard</span>"

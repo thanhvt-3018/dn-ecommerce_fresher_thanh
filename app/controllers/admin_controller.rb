@@ -7,10 +7,10 @@ class AdminController < ApplicationController
   private
 
   def require_login
-    return if logged_in?
+    return if user_signed_in?
 
     flash[:danger] = t "global.danger.log_in"
-    redirect_to login_path
+    redirect_to new_user_session_path
   end
 
   def check_admin

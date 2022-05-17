@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :require_login, :load_products_into_cart
+  before_action :store_location, :authenticate_user!, :load_products_into_cart
   before_action :build_order, only: :create
   before_action :total_price_into_cart,
                 :build_order_detail, only: :create
